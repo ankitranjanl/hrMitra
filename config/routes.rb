@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   get '/terms_and_conditions' ,to: 'pages#terms_and_conditions'
   # get '/home/index' ,to: 'home#index'
   root "home#index"
+
+  resource :session
+  resource :registration
+  resource :password_reset
+  resource :password 
+
 end
